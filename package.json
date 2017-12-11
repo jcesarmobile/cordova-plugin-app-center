@@ -1,0 +1,26 @@
+{
+  "name": "cordova-plugin-app-center",
+  "version": "1.0.0",
+  "description": "Plugin to initialize App Center in your Cordova app",
+  "cordova": {
+    "id": "cordova-plugin-app-center",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcesarmobile/cordova-plugin-app-center.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "jcesarmobile",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcesarmobile/cordova-plugin-app-center/issues"
+  },
+  "homepage": "https://github.com/jcesarmobile/cordova-plugin-app-center#readme",
+  "dependencies": {}
+}
