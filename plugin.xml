@@ -10,6 +10,18 @@
         </config-file>
         <source-file src="src/ios/AppCenterPlugin.m" />
         <header-file src="src/ios/AppCenterPlugin.h" />
-        <framework src="AppCenter" type="podspec"  spec="~> 1.1.0" />
+        <framework spec="~&gt; 1.1.0" src="AppCenter" type="podspec" />
+    </platform>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="AppCenterPlugin">
+                <param name="android-package" value="com.jcesarmobile.appcenter.AppCenterPlugin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/AppCenterPlugin.java" target-dir="src/com/jcesarmobile/appcenter" />
+        <framework src="com.microsoft.appcenter:appcenter-analytics:$APPCENTER_VERSION"/>
+        <framework src="com.microsoft.appcenter:appcenter-crashes:$APPCENTER_VERSION"/>
+        <preference name="APPCENTER_VERSION" default="1.0.0"/>
     </platform>
 </plugin>
